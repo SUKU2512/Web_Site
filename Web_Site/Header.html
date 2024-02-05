@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Font Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css"/>
+    <style>
+        .expandSearch{
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.expandSearch i{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 4px 8px 8px ;
+  color: #777;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.24s;
+}
+.expandSearch i:hover{
+  color: #0bf;
+}
+.expandSearch input{
+  border:none;
+  background: transparent;
+  font:14px/1.4 sans-serif;
+  padding-left: 26px;
+  background:#fff;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  transition: 0.24s;
+  width: 0px;
+  padding: 8px 0px 8px 34px;
+}
+.expandSearch input:focus{
+  border-color: #aaa;
+  outline: none;
+  width:200px;
+  padding: 8px 12px 8px 34px;
+  border-color: #0bf;
+}
+.expandSearch input:focus + i{
+  /*padding: 8px 4px 8px 8px ;*/
+  color: #ddd;
+  pointer-events: none;
+}
+    </style>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Document</title>
+</head>
+<body >
+    <div class="m-6 ">
+        <nav class="navbar navbar-expand-lg " style="background-color: navy;">
+            <div class="container-fluid ">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon text-light bg-light"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav" style="margin-left: auto;">
+                        <a href="#" class="nav-item nav-link active text-light">Dealer Zone</a>
+                        <a href="#" class="nav-item nav-link text-light">Supplier Zone</a>
+                        <a href="#" class="nav-item nav-link text-light">ITC Group</a>
+                        <a href="#" class="nav-item nav-link disabled text-light" tabindex="-1">Papyra</a>
+                    </div>                   
+                </div>
+            </div>
+        </nav>
+    </div>
+  
+      <nav class="d-flex w-100% justify-content-between">
+        <h3>LOGO</h3>
+        
+        <label class="expandSearch">
+            <input type="text" placeholder="Search..." name="search">
+            <i class="fa fa-search m-2"></i>
+        </label>
+      </nav>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <img src="img3.webp" class="d-flex w-100" alt="..." style="height: 30rem;">
+            <div class="carousel-caption d-none d-md-block">
+              <div class="bg-dark w-25 ms-auto p-3 ">
+                <p>HEADING COMES HERE</p>
+                <p>This is a sample web page using HTML,CSS and BootStrap</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img1.webp" class="d-block w-100" alt="..." style="height: 30rem;">
+            <div class="carousel-caption d-none d-md-block">
+                <div class="bg-dark w-25 ms-auto p-3 ">
+                    <p>HEADING COMES HERE</p>
+                    <p>This is a sample web page using HTML,CSS and BootStrap</p>
+                  </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img2.webp" class="d-block w-100" alt="..." style="height: 30rem;">
+            <div class="carousel-caption d-none d-md-block">
+                <div class="bg-dark w-25 ms-auto p-3 ">
+                    <p>HEADING COMES HERE</p>
+                    <p>This is a sample web page using HTML,CSS and BootStrap</p>
+                  </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <h2 class="text-center text-dark ">COMPANY AT A GLANCE</h2>
+        <div class="d-flex justify-content-center flex mb-5" style="flex-wrap: wrap;">
+          <div style="width: 300px; margin-right:20px ;" class="mb-3">
+            <img src="img3.webp" alt="..."/>
+          </div>
+          <div class="vr bg-black vline " style="margin-right:20px ; margin-left: 20px;"></div>
+          <div style="width: 300px; margin-right:20px ;" class="mb-3">
+            <img src="img2.webp" alt="..."/>
+          </div>
+          <div class="vr bg-black vline" style="margin-right:20px ; margin-left: 20px;"></div>
+          <div style="width: 300px; margin-right:20px ;" class="mb-3">
+            <img src="img3.webp" alt="..."/>
+          </div>
+        </div>
+          
+        </div>
+    
+        <div style="background-color: navy; padding-bottom: 20px;" class="mb-3" >
+            <h3 class="text-light text-center mt-3 ">OUR NEW PRODUCTS</h3>
+        </div>
+        
+        <div class="d-flex justify-content-center" style="flex-wrap: wrap;" >
+          <div style="width: 300px; margin-right:20px;">
+            <div class="card mb-5" style="width: 18rem; margin-right: 20px;" >
+              <img src="img11.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">FILO SERIESL</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div style="width: 300px; margin-right:20px ;">
+            <div class="card mb-5" style="width: 18rem; margin-right: 20px;" >
+              <img src="img9.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">FILO SERIESL</h5>
+              <p class="card-text">cvbnjkhgvb nmjbvh kjhgcfvb nmn  Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div style="width: 300px; margin-right:20px ;">
+            <div class="card mb-5" style="width: 18rem; margin-right: 20px;" >
+              <img src="img10.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">FILO SERIESL</h5>
+              <p class="card-text">Some quick kjytfdxcvbnjkiuigfgvc  nhgfvgb nngfdcvbn jhgfgcv nmbv mjuyg example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div style="width: 300px; margin-right:20px ;">
+            <div class="card mb-5" style="width: 18rem; margin-right: 20px;" >
+              <img src="img8.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">FILO SERIESL</h5>
+              <p class="card-text">Some quick kjuytfgcv bnmkjhjbv  mjiexample text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="text-center mb-3 mt-3" >
+            <button class="bg-light border-1 text-dark ">View More</button>
+        </div>
+    
+        <h3 class="text-center">EVERYDAY STORIES</h3>
+        <div class="d-flex justify-content-center flex" style="flex-wrap: wrap;">
+          <div style="width: 300px; margin-right:20px ;">
+            <div class="card mb-5" style="width: 18rem; margin-right: 20px;" >
+              <img src="img9.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tree</h5>
+                <p class="text-info mt-5">Read More...</p>
+              </div>
+            </div>
+          </div>
+          <div style="width: 300px; margin-right:20px ;">
+            <div class="card mb-5" style="width: 18rem; margin-right: 20px;" >
+              <img src="img8.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">FiloServer By ITC PDPD</h5>
+                <p class="text-info mt-5">Read More...</p>
+              </div>
+            </div>
+          </div>
+          <div style="width: 300px; margin-right:20px ;">
+            <div class="card mb-5" style="width: 18rem; margin-right: 20px;" >
+              <img src="img9.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Stay Safe Stay Healthy</h5>
+                <p class="text-info mt-5">Read More...</p>
+              </div>
+            </div>
+          </div>
+          <div style="width: 250px; margin-right:20px ;">
+            <div class="card mb-5" style="width: 18rem; margin-right: 20px;" >
+              <img src="img8.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Unit Bhadrachalam</h5>
+                <p class="text-info mt-5">Read More...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-color: navy;" class="mt-3 mb-3 pb-5">
+          <h3 class="text-center text-light mt-3 pt-3">INFOCUS</h3>
+          <div class="d-flex justify-content-center" style="flex-wrap: wrap;">
+            <div style="width:350px; margin-right:20px ;" class="mb-5">
+              <img src="img3.webp" alt="..." >
+            </div>
+            <div style="width: 350px; margin-right:20px ;" class="mb-5">
+              <img src="img2.webp" alt="..." >
+            </div>
+            <div style="width:350px; margin-right:20px ;"  class="mb-5">
+              <img src="img3.webp" alt="..." >
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-center mt-5 mb-5" style="color: navy;">HOW WE GROW A SUSTAINABILITYFUTURE</h3>
+          <div class="d-flex justify-content-center" style="flex-wrap: wrap;">
+            <div style="width: 400px; margin-right:20px ;" class="mb-5">
+              <img  src="img1.webp" width="400px" height="100%" />
+            </div>
+            <div style="width:300px; margin-right:20px ;">
+              <div >
+                <div class="card mb-5" style="width: 18rem;margin-right: 25px;" >
+                  <img src="img3.webp" class="card-img-top mb-5" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">OMEGA SERIES</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="width: 250px; margin-right:20px ;">
+              <div >
+                <div class="card mb-5" style="width: 18rem;margin-right: 25px;">
+                  <img src="img3.webp" class="card-img-top ,mb-5" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">OMEGA SERIES</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-center mt-5 mb-5" >GROUP SITES</h3>
+          <div class="d-flex justify-content-center flex" style="flex-wrap: wrap;">
+            <div style="width: 250px; margin-right:20px ;" class="mb-3">
+              <img src="img3.webp" alt=".." width="100%"/>
+            </div>
+            <div style="width: 250px; margin-right:20px ;"  class="mb-3">
+              <img src="img2.webp" alt=".." width="100%"/>
+            </div>
+            <div style="width: 250px; margin-right:20px ;"  class="mb-3">
+              <img src="img3.webp" alt=".." width="100%"/>
+            </div>
+            <div style="width: 250px;" class="mb-3">
+              <img src="img2.webp" alt=".." width="100%"/>
+            </div>
+          </div>
+        
+        </div>
+    <h3 class="text-info" style="margin-left:5%">DIDN'T FIND WHAT YOU'RE LOOKING FOR?</h3>
+    <div class="row" style="margin-left:5%; ">
+        <div class="col-lg-8 col-sm-12">
+            <p style="width: 800px;">weather you are looking for answers,would like to solve a problem,or just want to let us know how we did, you'll find many ways to contact us right here</p>
+        </div>
+        <div class="col-lg-3 col-sm-12" >
+            <button class=" mb-3 mt-auto d-flex bg-info btn-outline-info border-0 text-light justify-content-between" ><p class=" mt-2 mb-3" style="margin-right: 20px;">Enquire Now</p> <p class='mt-auto fa fa-long-arrow-right' style="padding-left: 30px;"></p></button>
+        </div>
+    </div>
+    <div class="ml-10" style="margin-left:5%;">
+        <h3 class="text-info" style="position: relative;">QUICK LINKS</h3>
+        <div class="row">
+            <div class="col-sm-6 col-lg-3 mb-10 text-dark align-content-center" style="margin-bottom: 7%;">
+                <p>> About Us</p>
+                <p>> Products</p>
+                <p>> Plastic Substtution Products</p>
+            </div>
+            <div class="col-sm-6 col-lg-2 mb-10 align-content-center">
+                <p>> FIS@</p>
+                <p>> Decor Papers</p>
+                <p>> Resources</p>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-10 align-content-center">
+                <p>> Plantations</p>
+                <p>> Sustainability</p>
+                <p>> Innovations</p>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-10 align-content-center">
+                <p>> Careers</p>
+                <p>> Conver it Tool</p>
+                <p>> Contact Us</p>
+            </div>
+            <div style="position: absolute; right:0%; height: fit-content; width: fit-content;">
+                <p class="text-light" style=" transform:rotate(-90deg);background-color: navy; font-size: x-small; padding: 5px;">REQUEST  SAMPLE</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-center mt-15 pt-10 mb-3 bg-light" style="padding-top: 3%;">
+        <h4 class=" mb-3">REGISTERED OFFICE:</h4>
+        <h6>COMPANY NAME COMES HERE</h6>
+        <p>India Ph:+91-33-22889371 | Corporate identity Number: L16005WB1910PLC009185</p>
+        <p>Disclaimer | Privacy Policy</p>
+    </div>
+</body>
+</html>
